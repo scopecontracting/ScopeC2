@@ -2,19 +2,19 @@ import { Quote } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "Scope transformed our outdated kitchen into a stunning modern space. The attention to detail and professionalism of their team was outstanding from start to finish.",
-    author: "Sarah Mitchell",
-    role: "Homeowner, Kitchen Renovation",
+    quote: "Scope has been clearing our plaza parking lot for three winters now. They show up before our stores open, every single time. Our tenants and customers always have safe access.",
+    author: "Robert Alvarez",
+    role: "Commercial Building Owner",
   },
   {
-    quote: "We&apos;ve worked with Scope on multiple commercial projects. Their ability to deliver on time and within budget while maintaining exceptional quality is unmatched.",
-    author: "David Chen",
-    role: "Property Developer",
+    quote: "I used to stress every time it snowed, wondering if I&apos;d make it to work. Now I wake up and my driveway is already cleared. These guys are lifesavers.",
+    author: "Linda Patterson",
+    role: "Residential Customer",
   },
   {
-    quote: "The team made our whole-home renovation seamless. They communicated every step of the way and the results exceeded our wildest expectations.",
-    author: "Jennifer & Mark Thompson",
-    role: "Homeowners, Full Renovation",
+    quote: "We manage 12 properties and Scope handles snow removal for all of them. Reliable, professional, and they actually answer the phone at 5am when you need them.",
+    author: "Michael Torres",
+    role: "Property Manager",
   },
 ]
 

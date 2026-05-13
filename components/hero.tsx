@@ -9,8 +9,8 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-mowing.jpg"
-          alt="Professional landscaper mowing a lawn"
+          src="/images/hero-workers.jpg"
+          alt="Year-round service - lawn care and snow removal"
           fill
           className="object-cover"
           priority
