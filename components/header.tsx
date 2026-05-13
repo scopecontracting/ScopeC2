@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
@@ -20,12 +21,16 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-sm bg-foreground flex items-center justify-center">
-              <span className="text-background font-bold text-sm">S</span>
-            </div>
-            <span className="font-serif text-xl tracking-tight">Scope</span>
-          </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/scope-logo.png"
+              alt="Scope General Contracting"
+              width={160}
+              height={48}
+              className="h-12 w-auto"
+              priority
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:gap-8">
