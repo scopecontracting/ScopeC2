@@ -25,9 +25,9 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 md:py-32 bg-secondary/30">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+    <section id="projects" className="py-16 sm:py-24 md:py-32 bg-secondary/30">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 sm:gap-6 mb-10 sm:mb-16">
           <div className="max-w-2xl">
             <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-4">
               Featured Projects
@@ -45,7 +45,7 @@ export function Projects() {
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {projects.map((project) => (
             <div key={project.title} className="group cursor-pointer">
               <div className="relative aspect-[4/5] overflow-hidden bg-muted mb-4">

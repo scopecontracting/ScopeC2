@@ -27,7 +27,7 @@ export function Header() {
               alt="Scope General Contracting"
               width={200}
               height={60}
-              className="h-14 w-auto"
+              className="h-10 sm:h-14 w-auto"
               priority
             />
           </Link>

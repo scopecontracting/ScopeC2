@@ -12,12 +12,12 @@ const values = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 md:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+    <section id="about" className="py-16 sm:py-24 md:py-32 bg-background">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="aspect-[4/5] relative overflow-hidden bg-muted">
+            <div className="aspect-[4/5] sm:aspect-[4/5] relative overflow-hidden bg-muted">
               <Image
                 src="/images/about-snow-crew.jpg"
                 alt="Our crew operating snow removal equipment"
@@ -26,9 +26,9 @@ export function About() {
               />
             </div>
             {/* Floating card */}
-            <div className="absolute -bottom-6 -right-6 md:bottom-8 md:-right-8 bg-foreground text-background p-6 md:p-8 max-w-[200px] md:max-w-[240px]">
-              <p className="font-serif text-4xl md:text-5xl mb-2">24/7</p>
-              <p className="text-sm text-background/80">Emergency snow removal when you need it most</p>
+            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 md:bottom-8 md:-right-8 bg-foreground text-background p-4 sm:p-6 md:p-8 max-w-[160px] sm:max-w-[200px] md:max-w-[240px]">
+              <p className="font-serif text-3xl sm:text-4xl md:text-5xl mb-1 sm:mb-2">24/7</p>
+              <p className="text-xs sm:text-sm text-background/80">Emergency snow removal when you need it most</p>
             </div>
           </div>
 

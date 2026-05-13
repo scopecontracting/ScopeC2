@@ -19,20 +19,20 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 py-32 pt-40">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32 pt-28 sm:pt-40 pb-32 sm:pb-32">
         <div className="max-w-3xl">
-          <p className="text-sm font-medium uppercase tracking-widest text-background/70 mb-6">
+          <p className="text-xs sm:text-sm font-medium uppercase tracking-widest text-background/70 mb-4 sm:mb-6">
             Commercial & Residential Property Services
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-background leading-tight text-balance">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-background leading-tight text-balance">
             Keeping businesses and homes running smoothly
           </h1>
-          <p className="mt-6 text-lg text-background/80 max-w-xl leading-relaxed">
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-background/80 max-w-xl leading-relaxed">
             From parking lot snow clearing to residential lawn care, we deliver 
             professional property maintenance for commercial and residential clients. 
             Reliable scheduling, heavy-duty equipment, and results you can count on.
           </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Button size="lg" variant="secondary" asChild>
               <Link href="#contact" className="gap-2">
                 Get a Free Quote
@@ -50,19 +50,19 @@ export function Hero() {
 
       {/* Stats Bar */}
       <div className="absolute bottom-0 left-0 right-0 z-10 bg-background/95 backdrop-blur-sm border-t border-border">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-6">
-          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <p className="font-serif text-3xl md:text-4xl text-foreground">10+</p>
-              <p className="text-sm text-muted-foreground mt-1">Years Experience</p>
+              <p className="font-serif text-2xl sm:text-3xl md:text-4xl text-foreground">10+</p>
+              <p className="text-xs sm:text-sm text-muted-foreground mt-1">Years Experience</p>
             </div>
             <div className="text-center">
-              <p className="font-serif text-3xl md:text-4xl text-foreground">100+</p>
-              <p className="text-sm text-muted-foreground mt-1">Commercial Contracts</p>
+              <p className="font-serif text-2xl sm:text-3xl md:text-4xl text-foreground">100+</p>
+              <p className="text-xs sm:text-sm text-muted-foreground mt-1">Commercial Contracts</p>
             </div>
             <div className="text-center">
-              <p className="font-serif text-3xl md:text-4xl text-foreground">98%</p>
-              <p className="text-sm text-muted-foreground mt-1">Client Satisfaction</p>
+              <p className="font-serif text-2xl sm:text-3xl md:text-4xl text-foreground">98%</p>
+              <p className="text-xs sm:text-sm text-muted-foreground mt-1">Client Satisfaction</p>
             </div>
           </div>
         </div>

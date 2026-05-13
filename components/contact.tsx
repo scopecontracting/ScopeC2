@@ -35,9 +35,9 @@ ${message}`
   }
 
   return (
-    <section id="contact" className="py-24 md:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+    <section id="contact" className="py-16 sm:py-24 md:py-32 bg-background">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20">
           {/* Contact Info */}
           <div>
             <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-4">
@@ -77,7 +77,7 @@ ${message}`
           </div>
 
           {/* Contact Form */}
-          <div className="bg-card border border-border p-8 md:p-10">
+          <div className="bg-card border border-border p-5 sm:p-8 md:p-10">
             {isSubmitted ? (
               <div className="text-center py-12">
                 <div className="h-16 w-16 rounded-full bg-secondary flex items-center justify-center mx-auto mb-6">

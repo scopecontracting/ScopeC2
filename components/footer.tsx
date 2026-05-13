@@ -2,10 +2,10 @@ import Link from "next/link"
 
 const navigation = {
   services: [
-    { name: "Residential Construction", href: "#services" },
-    { name: "Commercial Projects", href: "#services" },
-    { name: "Renovations", href: "#services" },
-    { name: "Design-Build", href: "#services" },
+    { name: "Lawn Care", href: "#services" },
+    { name: "Snow Removal", href: "#services" },
+    { name: "Landscaping", href: "#services" },
+    { name: "Fence Installation", href: "#services" },
   ],
   company: [
     { name: "About Us", href: "#about" },
@@ -23,8 +23,8 @@ const navigation = {
 export function Footer() {
   return (
     <footer className="bg-foreground text-background">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 md:py-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
@@ -33,8 +33,8 @@ export function Footer() {
               </div>
               <span className="font-serif text-xl tracking-tight text-background">Scope</span>
             </div>
-            <p className="text-sm text-background/60 leading-relaxed max-w-xs">
-              Building excellence through quality craftsmanship and dedicated service since 1999.
+            <p className="text-xs sm:text-sm text-background/60 leading-relaxed max-w-xs">
+              Keeping Edmonton properties maintained year-round with reliable lawn care and snow removal services.
             </p>
           </div>
 
