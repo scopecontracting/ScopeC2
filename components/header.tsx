@@ -23,11 +23,11 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/scope-logo.png"
+              src="/images/scope-logo-transparent.png"
               alt="Scope General Contracting"
               width={140}
               height={40}
-              className="h-10 w-auto mix-blend-multiply"
+              className="h-10 w-auto"
               priority
             />
           </Link>
