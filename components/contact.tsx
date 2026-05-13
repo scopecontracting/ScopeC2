@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Phone, Mail, MapPin, ArrowRight } from "lucide-react"
+import { Phone, Mail, ArrowRight } from "lucide-react"
 
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -44,7 +44,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground mb-1">Phone</p>
-                  <p className="text-muted-foreground">(555) 123-4567</p>
+                  <p className="text-muted-foreground">(780) 884-3816</p>
                 </div>
               </div>
 
@@ -54,22 +54,11 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground mb-1">Email</p>
-                  <p className="text-muted-foreground">info@scopecontracting.com</p>
+                  <p className="text-muted-foreground">scopecontracting1@outlook.com</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="h-12 w-12 rounded-sm bg-secondary flex items-center justify-center flex-shrink-0">
-                  <MapPin className="h-5 w-5 text-foreground" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground mb-1">Office</p>
-                  <p className="text-muted-foreground">
-                    123 Construction Way<br />
-                    Building City, ST 12345
-                  </p>
-                </div>
-              </div>
+              
             </div>
           </div>
 
