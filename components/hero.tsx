@@ -9,13 +9,13 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-walterdale-wide.jpg"
+          src="/images/hero-walterdale-new.jpg"
           alt="Edmonton skyline with Walterdale Bridge"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-foreground/70" />
+        <div className="absolute inset-0 bg-foreground/60" />
       </div>
 
       {/* Content */}
@@ -39,7 +39,7 @@ export function Hero() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-background/30 text-background hover:bg-background/10 hover:text-background" asChild>
+            <Button size="lg" className="bg-background text-foreground hover:bg-background/90" asChild>
               <Link href="#projects">
                 View Our Work
               </Link>
