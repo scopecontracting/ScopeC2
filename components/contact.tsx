@@ -47,8 +47,8 @@ ${message}`
               Let&apos;s discuss your project
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10 max-w-lg">
-              Ready to start your next construction project? Contact us for a free 
-              consultation and estimate. We&apos;re here to help bring your vision to life.
+              Need snow removal or landscaping services? Contact us for a free 
+              consultation and estimate. We&apos;re here to keep your property looking great.
             </p>
 
             <div className="space-y-6">
@@ -115,7 +115,7 @@ ${message}`
 
                 <div className="space-y-2">
                   <Label htmlFor="projectType">Project Type</Label>
-                  <Input id="projectType" name="projectType" placeholder="e.g., Kitchen Renovation, New Build" />
+                  <Input id="projectType" name="projectType" placeholder="e.g., Snow Removal, Landscaping Project" />
                 </div>
 
                 <div className="space-y-2">
