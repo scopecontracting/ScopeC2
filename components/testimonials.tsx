@@ -7,7 +7,7 @@ const testimonials = [
     role: "Commercial Building Owner",
   },
   {
-    quote: "I used to stress every time it snowed, wondering if I&apos;d make it to work. Now I wake up and my driveway is already cleared. These guys are lifesavers.",
+    quote: "I used to stress every time it snowed, wondering if I would make it to work. Now I wake up and my driveway is already cleared. These guys are lifesavers.",
     author: "Linda Patterson",
     role: "Residential Customer",
   },
