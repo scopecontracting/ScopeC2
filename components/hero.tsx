@@ -9,13 +9,13 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-walterdale-new.jpg"
-          alt="Edmonton skyline with Walterdale Bridge"
+          src="/images/hero-edmonton-final.jpg"
+          alt="Edmonton skyline with Walterdale Bridge at dusk"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-foreground/60" />
+        <div className="absolute inset-0 bg-foreground/50" />
       </div>
 
       {/* Content */}
