@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Residential Snow Clearing",
     category: "Snow Removal",
-    image: "/images/project-snow.jpg",
+    image: "/images/project-driveway-clear.jpg",
     description: "Reliable driveway and sidewalk clearing keeping properties safe and accessible all winter.",
   },
   {
