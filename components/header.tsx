@@ -25,9 +25,9 @@ export function Header() {
             <Image
               src="/images/scope-logo.png"
               alt="Scope General Contracting"
-              width={160}
-              height={48}
-              className="h-12 w-auto"
+              width={140}
+              height={40}
+              className="h-10 w-auto mix-blend-multiply"
               priority
             />
           </Link>
