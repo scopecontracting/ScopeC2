@@ -30,11 +30,11 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="mb-4">
               <Image
-                src="/images/scope-logo-transparent.png"
+                src="/images/scope-logo.png"
                 alt="Scope General Contracting"
                 width={160}
                 height={48}
-                className="h-12 w-auto"
+                className="h-14 w-auto"
               />
             </div>
             <p className="text-xs sm:text-sm text-background/60 leading-relaxed max-w-xs">
