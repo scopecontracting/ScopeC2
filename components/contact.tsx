@@ -5,33 +5,43 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Phone, Mail, ArrowRight } from "lucide-react"
+import { Phone, Mail, ArrowRight, Loader2 } from "lucide-react"
 
 export function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setIsSubmitting(true)
+    setError(null)
 
     const formData = new FormData(e.currentTarget)
-    const firstName = formData.get('firstName')
-    const lastName = formData.get('lastName')
-    const email = formData.get('email')
-    const phone = formData.get('phone')
-    const projectType = formData.get('projectType')
-    const message = formData.get('message')
+    
+    // Add Web3Forms access key
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "")
+    formData.append("to_email", "scopecontracting1@outlook.com")
+    formData.append("subject", `New Inquiry from ${formData.get('firstName')} ${formData.get('lastName')}`)
 
-    const subject = `New Inquiry from ${firstName} ${lastName}${projectType ? ` - ${projectType}` : ''}`
-    const body = `Name: ${firstName} ${lastName}
-Email: ${email}
-Phone: ${phone || 'Not provided'}
-Project Type: ${projectType || 'Not specified'}
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      })
 
-Message:
-${message}`
+      const data = await response.json()
 
-    window.location.href = `mailto:scopecontracting1@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-    setIsSubmitted(true)
+      if (data.success) {
+        setIsSubmitted(true)
+      } else {
+        setError("Something went wrong. Please try again or email us directly.")
+      }
+    } catch {
+      setError("Something went wrong. Please try again or email us directly.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -129,8 +139,19 @@ ${message}`
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full">
-                  Send Message
+                {error && (
+                  <p className="text-sm text-red-600 bg-red-50 p-3 rounded-sm">{error}</p>
+                )}
+
+                <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    "Send Message"
+                  )}
                 </Button>
               </form>
             )}
