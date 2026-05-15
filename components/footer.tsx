@@ -34,7 +34,7 @@ export function Footer() {
                 alt="Scope General Contracting"
                 width={160}
                 height={48}
-                className="h-12 w-auto brightness-0 invert"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-xs sm:text-sm text-background/60 leading-relaxed max-w-xs">
