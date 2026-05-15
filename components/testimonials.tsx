@@ -16,6 +16,21 @@ const testimonials = [
     author: "Michael Torres",
     role: "Property Manager",
   },
+  {
+    quote: "After that big dump in January, our entire condo complex was cleared by 6am. The residents were amazed. Scope is the only company we trust with our winter maintenance.",
+    author: "Karen Summers",
+    role: "Condo Board President",
+  },
+  {
+    quote: "Running a medical clinic means patients need safe access no matter the weather. Scope understands that and treats our lot like a priority every single storm.",
+    author: "Dr. James Chen",
+    role: "Clinic Owner",
+  },
+  {
+    quote: "Five years with Scope and not a single complaint from our warehouse staff about the parking lot. They are consistent, fast, and always professional.",
+    author: "Trevor Williams",
+    role: "Warehouse Operations Manager",
+  },
 ]
 
 export function Testimonials() {
@@ -31,7 +46,7 @@ export function Testimonials() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
